@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(200, 200, 200, 0.5);
+}
+
+.input-scope {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.data-scope > .card {
+    margin-bottom: 0.5rem;
+}

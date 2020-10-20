@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="./assets/main.css">
+</head>
+<body>
+    <div class="input-scope container">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="1">RF filter NF(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="1" id="a" onchange="change(this)">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="2">LNA Av(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="2" id="b" onchange="change(this)">
+            
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="3">LNA NF(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="3" id="c" onchange="change(this)">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="4">LNA IIP3(dBm)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="4" id="d" onchange="change(this)">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="5">Mixer Av(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="5" id="e" onchange="change(this)">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="6">Mixer NF(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="6" id="f" onchange="change(this)">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="7">Mixer IIP3(dBm)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="7" id="g" onchange="change(this)">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="8">IF filter Av(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="8" id="h" onchange="change(this)">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="9">IF filter NF(dB)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="9" id="i" onchange="change(this)">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="10">IF filter IIP3(dBm)</span>
+            </div>
+            <input type="number" class="form-control" aria-describedby="10" id="j" onchange="change(this)">
+        </div>
+    </div>
+    
+    <div class="data-scope container">
+        <div class="card">
+            <div class="card-header">
+              total Av of receiver(dB)
+            </div>
+            <div class="card-body">
+              <span id="Av">N/A</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+              total NF of receiver(dB)
+            </div>
+            <div class="card-body">
+              <span id="NF">N/A</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+              total IIP3 of receiver(dBm)
+            </div>
+            <div class="card-body">
+              <span id="IIP3">N/A</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery first, then popper.js, and then bootstrap plugins  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script type="text/javascript" src="./assets/main.js"></script>
+</body>
+</html>
